@@ -81,20 +81,13 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-blue to-brand-purple rounded-full blur-xl animate-float"></div>
                 <div className="absolute inset-2 bg-dark-bg rounded-full flex items-center justify-center">
                     <div className="w-full h-full bg-dark-card rounded-full border-2 border-slate-700 flex items-center justify-center overflow-hidden">
-                        <svg
-                            className="w-32 h-32 text-slate-600"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                            fillRule="evenodd"
-                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                            clipRule="evenodd"
-                            ></path>
-                        </svg>
-                        {/* You can replace the SVG with an <img /> tag like this: */}
-                        {/* <img src="/path-to-your-image.jpg" alt="Raghav S" className="w-full h-full object-cover" /> */}
+                        {/* 
+                            To add your profile picture:
+                            1. Create a 'public' folder in the root of your project.
+                            2. Place your image file (e.g., 'profile-image.jpg') inside the 'public' folder.
+                            3. The 'src' attribute below should then be '/profile-image.jpg'.
+                        */}
+                        <img src="/profile-image.jpg" alt="Raghav S" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>
