@@ -1,9 +1,13 @@
 import React from 'react';
 
-type PolymorphicProps<E extends React.ElementType> = {
+// Fix: Correctly type the polymorphic component props using React.PropsWithChildren and Omit.
+// This resolves the ambiguity for the 'children' prop that causes a TypeScript error
+// when spreading props onto a generic component element.
+type PolymorphicProps<E extends React.ElementType> = React.PropsWithChildren<{
   as?: E;
   variant?: 'purple' | 'green';
-} & React.ComponentPropsWithoutRef<E>;
+} & Omit<React.ComponentPropsWithoutRef<E>, 'children'>>;
+
 
 const defaultElement = 'button';
 
