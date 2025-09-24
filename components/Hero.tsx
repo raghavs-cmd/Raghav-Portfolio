@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
           <div className="mt-8">
             <GooeyButton
                 as="a"
-                href="/resume.pdf" // Placeholder path
+                href="https://drive.google.com/file/d/1xd3a8WduccnlWZ70i9J50gsVkzGR5xq2/view?usp=sharing" // Placeholder path
                 download
                 variant="purple"
             >
