@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
                             2. Place your image file (e.g., 'profile-image.jpg') inside the 'public' folder.
                             3. The 'src' attribute below should then be '/profile-image.jpg'.
                         */}
-                        <img src="passport photo.jpeg" alt="Raghav S" className="w-full h-full object-cover" />
+                        <img src="public/raghav.jpeg" alt="Raghav S" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>
