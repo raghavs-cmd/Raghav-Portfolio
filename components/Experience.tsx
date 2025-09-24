@@ -6,18 +6,23 @@ const experienceData = [
     role: 'Associate Market Research Analyst',
     company: 'Lingotran Private Limited',
     period: 'April 2025 - Present',
-    description: 'I analyze learner and market data to uncover insights, support product strategy, and guide decision-making. Alongside research, I contribute to marketing campaigns by designing data-driven strategies, tracking performance, and optimizing outreach for growth.',
+    description: 'Drove a 40% increase in sales through A/B testing and multi-platform campaigns, generating ₹1.25L in revenue. Developed real-time dashboards to track KPIs, accelerating decision-making. Refined product strategy using Excel and CRM analytics, which boosted user satisfaction by 15%.',
     kpis: [
       { label: 'Revenue Impact', value: '₹1.25L' },
-      { label: 'Engagement', value: '+40%' },
+      { label: 'Sales Growth', value: '+40%' },
+      { label: 'User Satisfaction', value: '+15%' },
     ]
   },
   {
     role: 'Market Research Intern',
     company: 'Lingotran Private Limited',
     period: 'January 2025 - March 2025',
-    description: 'Assisted in collecting and cleaning market data. Created preliminary reports on competitor analysis and consumer trends using Excel, which supported strategic planning sessions.',
-    kpis: []
+    description: 'Expanded pilot program reach by 20% by onboarding 24 teachers. Improved operational efficiency by 30% through CRM management and Gmail integration. Automated workflows with Zapier, increasing productivity by 25%.',
+    kpis: [
+      { label: 'Program Reach', value: '+20%' },
+      { label: 'Efficiency Gain', value: '+30%' },
+      { label: 'Productivity Boost', value: '+25%' },
+    ]
   },
 ];
 

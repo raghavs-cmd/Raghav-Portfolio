@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
-import Education from './components/Education';
 import Projects from './components/Projects';
 import Interests from './components/Interests';
 import Skills from './components/Skills';
@@ -37,11 +36,10 @@ const App: React.FC = () => {
         <Hero />
         <main className="container mx-auto px-6 md:px-12 py-16 space-y-24">
           <About />
-          <Experience />
-          <Education />
-          <Projects />
-          <Interests />
           <Skills />
+          <Experience />
+          <Interests />
+          <Projects />
           <Contact />
         </main>
         <footer className="text-center py-8 border-t border-slate-700/50 text-slate-400">
