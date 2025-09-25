@@ -116,17 +116,40 @@
           opacity: 0;
         }
       }
+      
+      /* Hero Glow Effect */
+      .hero-glow-container {
+        position: relative;
+      }
+      .hero-glow-container::before {
+        content: '';
+        position: absolute;
+        left: var(--mouse-x, 50%);
+        top: var(--mouse-y, 50%);
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle at center, rgba(0, 191, 255, 0.1), transparent 70%);
+        transform: translate(-50%, -50%);
+        transition: all 0.2s ease-out;
+        pointer-events: none; /* Make sure it doesn't block mouse events */
+        z-index: 0;
+      }
 
-      /* Tilt effect for hero image */
-      .perspective-container {
-        perspective: 1000px;
+      /* Orbiting Ring for Profile Image */
+      .orbit {
+        position: absolute;
+        inset: -15px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: #00BFFF; /* brand-blue */
+        border-right-color: #00BFFF;
+        opacity: 0.7;
+        animation: spin 8s linear infinite;
+        will-change: transform;
       }
-      .tilt-card {
-        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        transform-style: preserve-3d;
-      }
-      .perspective-container:hover .tilt-card {
-        transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
       }
 
       /* Floating bits for hero */
